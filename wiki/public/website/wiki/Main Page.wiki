@@ -1,0 +1,31 @@
+''Wiki in a Jar'' is a small (one jar file, <100KB) Java Wiki implementation with great focus on simplicity. It is intended to run on a USB stick as a replacement for a paper note- and address book as a Personal Information Manager (PIM). It comes with a small web server and can handle vcard (vcf) contact files.
+
+The markup is kept simple (based on Wikipedia syntax) and content is stored in plain text files.
+
+Why? To reveal the power of plain text. Plain text files can be opened with almost any editor and by keeping the markup simple it is very easy to transform the content to any other desired format even after years, when the original editor is not available anymore (it's hard to imagine that there could be a world without text editors).
+
+* Wiki pages can be edited, linked, tagged, and searched. The same is true for vCard contact files, except being able to directly edit them. [[Here is why]].
+* Probably the best new feature is the addition of '''Tag Trees'''. They allow to group and organize tagged pages in a hierarchy, bringing structure into the otherwise flat tag cloud.
+
+Wiki in a Jar is an Open Source Project released under the GNU General Public License.
+
+* You can '''download it here''': http://sourceforge.net/projects/wiki-in-a-jar/
+
+* You will need a Java Runtime Environment of version '''1.5''' or later (these days it is already installed on most systems)
+* The wiki serves XML and XSL pages instead of HTML. Most modern browsers support that, so you do not have to worry about this.
+** Firefox supports XML/XSLT/CSS as of version 1.0.2 
+** Internet Explorer as of version 6
+** More details here: http://www.w3schools.com/xsl/xsl_browsers.asp
+
+== Under the Hood ==
+=== Web Server ===
+* Wiki in a Jar comes with a small web server so you have access to your notes from any machine that can connect to your computer.
+
+=== Client side XSLT ===
+* Instead of serving HTML pages, all pages are actually XML. They are transformed into HTML by your web browser using XSL style sheets. To make them look pretty, the wiki server distributes CSS templates along with XML and XSL files.
+
+=== XRays - The Framework ===
+* The wiki is based on the '''XRays Web Framework''' allowing to easily create Model/View/Controller XML/XSL based web applications.
+* Currently, the framework is part of the wiki code base, but it will be forked into a separate project in the future.
+
+[[tags: wiki, main]]

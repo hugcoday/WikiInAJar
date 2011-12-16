@@ -1,0 +1,39 @@
+The wiki allows you to add tags to your pages in a similar way how you create links between pages (details here: [[Wiki Help]]). Tags show up at the bottom of a page. If you click on a tag, you get a list of pages that are also tagged with that tag.
+
+Tag trees are best explained using an example. Let's assume you use the wiki to keep track of your work related and private ideas. You could tag work related ideas with the tags ''work'' and ''idea'' and you could tag private ideas with ''private'' and ''idea''. Now if you click on the idea link on a tagged page you will get a list of all ideas, private and work related. Wouldn't it be nice to keep all that work related stuff away once you leave the office?
+
+That's exactly what tag trees are for. A tag tree is a hierarchical representation of your tags. It allows you to group and sort tagged pages. You can for example list all pages tagged with ''private'' and ''idea''. In the same tag tree you can also have your work related ideas listed in a separate branch.
+
+* Here is an example: [[tagtree:work/idea/--/--/private/idea]] 
+
+Every page in a tag tree is tagged with the parent tag and all of its parent tags. If a page does not match any of the tags, it is not listed.
+
+Now let's say you change you mind and you want to list all your ideas at once, but group them into private and work related ideas.
+
+* Grouped: [[tagtree:idea/work/--/private]]
+
+After another change of heart, you now would like to list your idea pages, but all of the other pages even if they are not tagged at all. 
+
+* This is the way to go: [[tagtree:all/idea/work/--/private]]
+
+If you look at the bottom of any page (wiki or vCard), you see that all of them already have 3 tags: 
+
+# the tag ''all'' allowing you to match all pages,
+# the page type, either ''wiki'' or ''vcard'' allowing you to group pages by type,
+# and the first letter of the page title allowing you to nicely group pages in the tree (the index page makes use of that).
+
+== Tag Tree Links Explained ==
+Creating a new tag tree is as easy as creating a link. Actually, a tag tree does not really exist as a page. It is more like a database query or a search results page.
+
+A tag tree is pretty much the same as a path name or URL; parent and child elements are separated by a single slash character. If you want a child to be added not as child of the last path element, but to its parent, you have to use two '-' characters as an indication to go up one level. This is similar to the two dots in the '''cd ..''' command to go up on directory. In fact, if your browser would not optimize dots out of a URL, I would have used dots instead of the two dashes.
+
+Try it out. Create a couple of tag tree links. Alternatively, you can also experiment with the tag tree URL directly in your browser. Just start the URL with ''/tag/tree/'' and then add tags separated by a slash. 
+
+=== The Secret of the Search Bar ===
+Have you already used the search bar? If not, go ahead and do so, it's a prerequisite for unfolding the secret behind it.
+
+Done? Ok, you probably have noticed that the search results page looks a lot like a tag tree. The truth is, it actually '''is''' a tag tree, only that the tags are not tags, but words from a full text search (tags are defined in the page text so they are matched as well). And yes, the parent directive ('--') works just fine in the search bar. Instead of creating tag tree links all over the place you can just enter them into the search bar (separated by slash, comma, or space). If after hours of experimenting, you have found a useful combination, you can create a link to it to save it for further reference.
+
+Happy tagging.
+
+[[tags: help]]

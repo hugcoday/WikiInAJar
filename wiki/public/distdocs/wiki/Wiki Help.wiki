@@ -1,0 +1,47 @@
+The primary focus of ''wiki in a jar'' is simplicity. That's why everything is stored as plain text. This hopefully ensures that you will be able to read and modify your wiki pages in a time when Web 2.0 is only a distant memory and who knows, maybe even after Web 3.0 has passed?
+
+Go take a look, it's all under: '''public/docs'''. That's the place you want to include in your regular backups (you do have regular backups, don't you?).
+
+== How to... ==
+=== ... create a new wiki page ===
+* Just create a link to the new page from any other wiki page. If you click on a link to a page that does not exist, it will be created.
+=== ... turn a wiki page into an event ===
+* All you need to do is add the date of the format ''yyyy-mm-dd'' somewhere in the title
+* Example page title: 
+** ''2007-03-12 Meeting minutes for sales meeting''
+** ''Jim's Wedding 2007-06-23''
+* The wiki article is then recognized as event (a calendar for that month is shown in the top right corner for that article)
+
+=== ... create a new vCard contact ===
+* Export your contact(s) from you favorite e-mail application to the ''vCard'' (.vcf) format and drop the files in ''public/docs/vcard''.
+
+Note that you cannot create or modify contact information in the wiki. That's by design. Chances are high that you already have your contacts listed in multiple of other sources (such as e-mail clients). Imagine the confusion if you would start modifying your contacts in all of these places including the wiki. The idea is to keep (and update) your contacts in a single source and synchronize them with other locations, the wiki being one of them. However, if enough people wish for that feature, I might actually implement it.
+
+==== the good news ====
+You can still use wiki formatting in the notes section of you contacts. You can even create links between contacts and wiki pages.
+
+=== ... link wiki pages with contacts and vice versa ===
+* There are two different types of pages: wiki pages and contacts. To create links between pages of the same type you simply put the page name (for wiki pages) or vCard file name (usually first and last name) in two square brackets like this: [[Main Page]]
+* To create links between the two types, add the type as a prefix, ''vcard:'' for contacts, ''wiki:'' for wiki pages like this: [[vcard:Firstname Lastname]]
+
+=== ... add tags ===
+* Remember how to add links? Adding tags is the same idea. Use ''tags:'' followed by a list of tags separated by comma or space surrounded by square brackets.
+
+=== ... use tag trees ===
+* That's so exiting, there is a separate page for this: [[Tag Trees]]
+
+=== ... restore a page from the history ===
+The wiki keeps up to 3 additional versions besides the current one for a wiki page. They are all stored in the same folder as the wiki pages: ''./public/docs/wiki''. Should you wish to revert to an older version, just remove the number from the file name of the version that you would like to restore.
+
+=== ... use keyboard shortcuts ===
+* The wiki uses so called ''access keys'' for most of the common links (home, index, edit, save, etc.). To determine the access key for a link, move the mouse over it and wait for a tooltip, it will show the access key (if there is any).
+* Most browsers require you to press ''Alt'' in addition to the access key. So to use the access key for the search bar, ''f'', you would have to press ''Alt-f''.
+** Note that the tooltip lists the ''Alt'' key, but this could vary depending on what browser you use.
+
+=== ... search Google from the wiki ===
+Yet another secret of the search bar:
+* Start the query with a single dot and the search is redirected to Google.
+* That allows for quick web searches even if the wiki is set as the browser's home page.
+* You can use the access key '''f''' (for ''find'') to focus the search bar. Most browsers use the ''Alt'' key to activate an access key (e.g. ''Alt-f'' to activate the search bar).
+
+[[tags: metawiki help]]

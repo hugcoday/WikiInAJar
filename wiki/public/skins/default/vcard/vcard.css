@@ -1,0 +1,9 @@
+#vcard td{
+	border-bottom: 1px solid gray;
+	border-right: 1px solid gray;
+	padding: 5px;
+}
+
+#vcard-proptype {
+	color: GRAY;
+}

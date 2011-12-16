@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/public/skins/default/master.xsl"?>
+
+<page>
+
+	<main-menu>
+		<main-menu-entry selected="no" value="首页" link="/wiki" accesskey="h" title="首页 [Alt-h]"/>
+		<main-menu-entry selected="no" value="索引" link="/index/wiki" accesskey="i" title="索引 [Alt-i]"/>
+		<article-menu />
+	</main-menu>
+
+	@content@
+
+	<footer />
+
+</page>

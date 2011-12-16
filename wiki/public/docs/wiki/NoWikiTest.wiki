@@ -1,0 +1,19 @@
+= Test =
+some <nowiki>''text''</nowiki> that would be formatted
+
+formatted: ''text''
+
+empyt tags: <nowiki></nowiki>
+
+break:<br/>
+another one: <br   />
+next line
+
+Line break:
+
+<nowiki>
+ lines ''italic''
+
+ = heading =
+
+</nowiki>

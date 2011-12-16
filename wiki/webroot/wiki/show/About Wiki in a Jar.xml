@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/public/skins/default/master.xsl"?>
+
+<page>
+
+	<main-menu>
+		<main-menu-entry selected="no" value="home" link="/wiki/show/Main Page.xml"/>
+		<article-menu />
+	</main-menu>
+
+
+<article >
+ <tag-list >
+</tag-list>
+
+ <id >About Wiki in a Jar</id>
+
+ <show-article >
+  <content ><div><i>Wiki in a Jar</i> is a small Wiki written in Java with great focus on simplicity. It is intended to run on a USB stick as a replacement for a paper note- and address book as a Personal Information Manager (PIM). It supports vcard (vcf) contact files.
+<p>&#160;</p>
+<ul>
+	<li><b>Wiki in a Jar Version:</b> <i>static</i> 03/16/2007</li>
+</ul>
+<p>&#160;</p>
+<h2> License </h2>
+<ul>
+	<li><i>Wiki in a Jar</i> is distributed under the GNU General Public License (GPL). More details here: <a href='http://www.gnu.org/copyleft/gpl.html'>http://www.gnu.org/copyleft/gpl.html</a></li>
+	<li>The embedded HTTP server is based on <i>NanoHTTPD</i> available under a modified BSD license. More details here: <a href='http://elonen.iki.fi/code/nanohttpd/#license'>http://elonen.iki.fi/code/nanohttpd/#license</a></li>
+</ul>
+<p>&#160;</p>
+<h2> Disclaimer </h2>
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR <i>AS IS</i> AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</div></content>
+</show-article>
+</article>
+
+
+	<footer />
+
+</page>
+

@@ -1,0 +1,39 @@
+"Wiki in a Jar" is a small Wiki written in Java with great
+focus on simplicity. It is intended to run on a USB stick as
+a replacement for a paper note- and address book as a
+Personal Information Manager (PIM). It supports vcard (vcf)
+contact files.
+
+https://sourceforge.net/projects/wiki-in-a-jar/
+* Version 0.8 (11/28/2008)
+- NEW: Full UTF-8 support (thanks to Frank Dietrich)
+- NEW: Table support
+- NEW: HTML tags support: code, tt, pre
+- NEW: 'nowiki' tag support
+- NEW: Quick append box: append text to any wiki page without opening the edit view
+- BUG: Calendar would show each month with 31 days (thanks to Frank Dietrich)
+- BUG: Equals sign ('=') in heading would be removed
+- BUG: Linux start script now uses 'nohup' (thanks to Reto R.)
+
+* Version 0.7.1 (04/18/2007)
+- Fixed bug: Last vCard category was not recognized in tag tree
+- Fixed bug: #1701702 Search doesn't search page names
+- Minor: Make better use of screen real estate (IE still has minor layout issues)
+
+* Version 0.7 (03/31/2007):
+- NEW: a calendar for each month listing birthdays of your contacts
+- NEW: calendar support for wiki pages: a date of the format yyyy-mm-dd in the title adds a calendar to that page
+- NEW: contacts with birthday date set and wiki pages with date in title are automatically tagged with month and year
+- NEW: support for to do list items. Start a list text with [ ], [!], or [x] (see wiki formatting demo)
+- Fixed bug: 1689383 Doesn't support < or > in page text
+- Fixed bug: Error when adding single quote in strong/er/st text (e.g. ''Jim's birthday'')
+- Minor: pre/code text now in same font size as body text
+
+* Version 0.6.1  (03/21/2007):
+- Links to new pages are now highlighted in a different color
+- Empty vCard properties are not shown anymore
+- Added keyboard shortcuts (access keys) for most links
+- Added Google search support for search bar (just start query with a dot)
+
+* Version 0.6 (03/16/2007)
+- The new version, 0.6, is a major rewrite. The presentation layer is now completely based on XML, XSL, and CSS.

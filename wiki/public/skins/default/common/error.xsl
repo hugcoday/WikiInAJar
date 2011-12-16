@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<xsl:stylesheet version="1.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+	<xsl:template match="error">
+		<h2>Error</h2>
+		<pre>
+			<xsl:value-of select="message" />
+		</pre>
+	</xsl:template>
+
+</xsl:stylesheet>

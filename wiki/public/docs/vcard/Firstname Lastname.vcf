@@ -1,0 +1,16 @@
+BEGIN:VCARD
+VERSION:2.1
+N:Lastname;Firstname
+FN:Firstname Lastname
+ORG:Company
+TITLE:Job title
+NOTE;ENCODING=QUOTED-PRINTABLE:Some ''notes'' [[Firstname Lastname]] [[wiki:Main Page]].=0D=0A
+TEL;WORK;VOICE:business phone
+TEL;HOME;VOICE:home phone
+TEL;CELL;VOICE:cell phone
+TEL;WORK;FAX:fax
+ADR;WORK:;;1234 Street;City;State;ZIP;Country
+LABEL;WORK;ENCODING=QUOTED-PRINTABLE:1234 Street=0D=0ACity, State ZIP=0D=0ACountry
+BDAY:20050501
+EMAIL;PREF;INTERNET:firstname@lastname.com
+END:VCARD

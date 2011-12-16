@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<!-- ====================================================================== 
+     Mar 8, 2007 8:57:25 AM                                                        
+
+     Wiki in a jar    
+     A wiki small enough to run on a USB drive.
+                   
+     rico_g AT users DOT sourceforge DOT net
+     ====================================================================== -->
+<project name="Wiki in a jar" default="dist">
+	<description>
+     Wiki in a jar    
+     A wiki small enough to run on a USB drive.
+                   
+	 rico_g AT users DOT sourceforge DOT net
+    </description>
+
+	<property name="build" value="build" />
+	<property name="dist" value="dist" />
+
+	<property name="dist.version" value="0.6.1" />
+
+	<tstamp>
+		<format property="build.date" pattern="yyyyMMdd" />
+	</tstamp>
+
+	<!-- ================================= 
+          target: clean              
+         ================================= -->
+	<target name="clean" description="Cleans output directories">
+		<delete dir="${build}" />
+		<delete dir="${dist}" />
+	</target>
+
+
+	<!-- ================================= 
+          target: build              
+         ================================= -->
+	<target name="build" depends="init, compile, jar" description="Builds the project jar">
+	</target>
+
+	<!-- ================================= 
+          target: dist              
+         ================================= -->
+	<target name="dist" depends="build" description="Creates the binary distibution">
+		<copy file="public/distdocs/wiki/About Wiki in a Jar.wiki" tofile="${build}/About Wiki in a Jar.wiki" filtering="true">
+			<filterset>
+				<filter token="VERSION" value="${dist.version} ${build.date}" />
+			</filterset>
+		</copy>
+		<zip destfile="${dist}/WikiInAJar-${dist.version}-${build.date}-bin.zip">
+			<zipfileset file="bin/start.cmd" prefix="wiki.in.a.jar/bin" />
+			<zipfileset file="bin/start.sh" filemode="755" prefix="wiki.in.a.jar/bin" />
+			<zipfileset file="${build}/wiki.in.a.jar" prefix="wiki.in.a.jar" />
+			<zipfileset dir="public/skins" prefix="wiki.in.a.jar/public/skins" />
+			<zipfileset dir="public/views" prefix="wiki.in.a.jar/public/views" />
+			<zipfileset dir="public/distdocs" prefix="wiki.in.a.jar/public/docs">
+				<exclude name="**/About Wiki in a Jar.wiki" />
+			</zipfileset>
+			<zipfileset file="${build}/About Wiki in a Jar.wiki" prefix="wiki.in.a.jar/public/docs/wiki" />
+		</zip>
+
+	</target>
+
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: init                      
+         - - - - - - - - - - - - - - - - - -->
+	<target name="init">
+		<mkdir dir="${build}" />
+		<mkdir dir="${build}/classes" />
+		<mkdir dir="${dist}" />
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: compile                      
+         - - - - - - - - - - - - - - - - - -->
+	<target name="compile">
+		<javac srcdir="src" destdir="${build}/classes" classpath="lib/xrays.jar" debug="on" />
+	</target>
+
+	<!-- - - - - - - - - - - - - - - - - - 
+          target: jar                      
+         - - - - - - - - - - - - - - - - - -->
+	<target name="jar">
+		<unjar src="lib/xrays.jar" dest="${build}/classes" />
+		<jar basedir="${build}/classes" destfile="${build}/wiki.in.a.jar">
+			<manifest>
+				<attribute name="Main-Class" value="org.rgse.wikiinajar.server.Server" />
+			</manifest>
+		</jar>
+	</target>
+
+
+</project>

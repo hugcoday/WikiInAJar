@@ -1,0 +1,16 @@
+== Welcome to your new wiki installation ==
+Where to go from here:
+
+* For an example of wiki formatting take a look here: [[Wiki Formatting Demo]]
+* For an example vCard contact take a look there: [[vcard:Firstname Lastname]]
+* More details on how to use the wiki: [[Wiki Help]]
+
+* Upgrading to a newer version? Take a look at [[How to upgrade Wiki in a jar]]
+
+Also make sure you take a look at the best new feature: [[Tag Trees]].
+
+* Enough reading, time for some hands-on. See the edit link in the top left corner? It's time to click it.
+
+Have fun!
+
+[[tags: wiki, main]]

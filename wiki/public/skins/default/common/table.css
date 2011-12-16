@@ -1,0 +1,22 @@
+
+table.wikitable {
+    border: 1px solid #2D4386;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+table.wikitable tr.even {
+    background-color: #DBCFBD;
+}
+
+table.wikitable tr.odd {
+    background-color: #FFF;
+}
+
+table.wikitable th {
+    background-color: #5F76BC;
+}
+
+table.wikitable td, table.wikitable th {
+    border-left: 1px solid #2D4386;
+}

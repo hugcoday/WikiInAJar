@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/public/skins/default/master.xsl"?>
+
+<page>
+
+	<main-menu>
+		<main-menu-entry selected="no" value="首页" link="/wiki" accesskey="h" title="首页 [Alt-h]"/>
+		<main-menu-entry selected="yes" value="索引"/>
+		<main-menu-entry selected="no" value="日历" link="/calendar" accesskey="c" title="日历 [Alt-c]"/>
+	</main-menu>
+
+	<sub-menu>
+		<sub-menu-entry selected="no" value="文档" link="/index/wiki" accesskey="w" title="文档 [Alt-w]"/>
+		<sub-menu-entry selected="no" value="名片" link="/index/vcard"  accesskey="v" title="名片 [Alt-v]"/>
+		<sub-menu-entry selected="yes" value="全部"/>
+	</sub-menu>
+
+	@content@
+
+	<footer />
+
+</page>

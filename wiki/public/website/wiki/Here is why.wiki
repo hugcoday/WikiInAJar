@@ -1,0 +1,5 @@
+You cannot create or modify contact information in the wiki. That's by design. Chances are high that you already have your contacts listed in multiple of other sources (such as e-mail clients). Imagine the confusion if you would start modifying your contacts in all of these places including the wiki. The idea is to keep (and update) your contacts in a single source and synchronize them with other locations, the wiki being one of them. However, if enough people wish for that feature, I might actually implement it.
+
+ 
+== The Good News ==
+You can still use wiki formatting in the notes section of you contacts. You can even create links between contacts and wiki pages.

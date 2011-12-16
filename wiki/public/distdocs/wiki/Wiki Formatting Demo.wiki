@@ -1,0 +1,105 @@
+{| border="1"
+! Wiki syntax !! What is looks like
+|-
+|<pre><nowiki>= Heading 1 =
+== Heading 2 ==
+=== Heading 3 ==
+==== Heading 4 ====</nowiki></pre>
+|
+= Heading 1 =
+== Heading 2 ==
+=== Heading 3 ===
+==== Heading 4 ====
+|-
+!colspan="2"!Unordered list:
+|-
+|<pre><nowiki>
+* Item
+** Sub list item
+* Next item
+</nowiki></pre>
+|
+* Item
+** Sub list item
+* Next item
+|-
+!colspan="2"!Ordered list:
+|-
+|<pre><nowiki>
+# Item
+## Sub list item
+# Next item
+</nowiki></pre>
+|
+# Item
+## Sub list item
+# Next item
+|-
+! colspan="2"! Todo style list:
+|-
+|<pre><nowiki>
+* [ ] open to do list item
+* [!] important open to do list item
+* [x] done to do list item
+</nowiki></pre>
+|
+* [ ] open to do list item
+* [!] important open to do list item
+* [x] done to do list item
+|-
+! colspan="2"!Block of text
+|-
+| colspan="2"|
+ leading space
+ Always remember you're unique, just like everyone else.
+|-
+! colspan="2"! Horizontal line:
+|-
+|<nowiki>----</nowiki> ||----
+|-
+! colspan="2"! Links:
+|-
+|<pre><nowiki>* URL: http://wiki-in-a-jar.sourceforge.net/
+* Wiki link: [[Main Page]]
+* vCard link: [[vcard:Firstname Lastname]]
+* Tags: [[tags: metawiki help]]</nowiki></pre>
+|
+* URL: http://wiki-in-a-jar.sourceforge.net/
+* Wiki link: [[Main Page]]
+* vCard link: [[vcard:Firstname Lastname]]
+* Tags: [[tags: metawiki help]] (you can't see them here, but at the bottom of the page)
+|-
+! colspan="2"! HTML tags:
+|-
+|colspan="2"| Supported tags:
+* <code>code</code> - Monotyped text
+* <code>tt</code> - Typewriter text (similar to code)
+* <code>pre</code> - Preformatted text (represented as a block of text)
+* <code>nowiki</code> - No wiki formatting between these tags (note: nowiki tags cannot be nested)
+
+NOTE: Be careful when using HTML tags! Make sure you always add the closing tag. If the tags are malformed, you will get an error when you save the page saying something like this:
+<pre>
+XML Parsing Error: mismatched tag. Expected: /pre.
+Location: http://localhost:3003/wiki/show/Wiki%20Formatting%20Demo
+Line Number 233, Column 3:</td></tr>
+</pre>
+Should that happen, use the browser's '''Back''' button to get back to the edit form and verify that all HTML tags have open '''and''' closing tag. If you can't  solve the problem, remove all HTML tags and try again.
+|}
+
+= Tables =
+Simple table:
+{|
+! column 1 !! column 2
+|-
+| cell 1   || cell 2
+|}
+
+Styled table:
+{| class="wikitable"
+! column 1 !! column 2
+|-
+| cell 1   || cell 2
+|-
+| more
+| cells
+|}

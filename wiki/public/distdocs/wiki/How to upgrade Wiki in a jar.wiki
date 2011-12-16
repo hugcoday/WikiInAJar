@@ -1,0 +1,12 @@
+Upgrading to a new version of ''Wiki in a jar'' is pretty easy:
+
+# Extract the new Wiki in a jar version to a new directory
+## Should you have started your new Wiki already, stop it first and then continue with the next step.
+## Before you stop it, make a copy of these instructions or read and understand the steps now (once you stop the Wiki, this page will be unavailable).
+# Delete the data directory of the '''new''' Wiki in a jar version (this will be replaced with your old, actual Wiki documents)
+## The directory is: ''<wiki install dir>/public/docs''
+# Now copy the data directory from your old Wiki installation to the new version:
+## Copy ''<OLD wiki install dir>/public/docs'' to <NEW wiki install dir>/public/docs''
+# Start your new Wiki version and it will use the files you just copied.
+
+Note: It is also a good idea to backup your Wiki files in ''public/docs'' on a regular basis. Hard drives tend to break exactly at the least convenient time.

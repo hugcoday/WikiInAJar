@@ -1,0 +1,8 @@
+#tagtree-tag {
+	padding-left: 20px;
+	background: url(/public/skins/default/tagtree/folder.gif) no-repeat top left;
+}
+#tagtree-link {
+	padding-left: 15px;
+	background: url(/public/skins/default/tagtree/rarr.gif) no-repeat left;
+}

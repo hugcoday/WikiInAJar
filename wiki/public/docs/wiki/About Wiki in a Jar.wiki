@@ -1,0 +1,10 @@
+''Wiki in a Jar'' is a small Wiki written in Java with great focus on simplicity. It is intended to run on a USB stick as a replacement for a paper note- and address book as a Personal Information Manager (PIM). It supports vcard (vcf) contact files.
+
+* '''Wiki in a Jar Version:''' 0.8 20081128
+
+== License ==
+* ''Wiki in a Jar'' is distributed under the GNU General Public License (GPL). More details here: http://www.gnu.org/copyleft/gpl.html
+* The embedded HTTP server is based on ''NanoHTTPD'' available under a modified BSD license. More details here: http://elonen.iki.fi/code/nanohttpd/#license
+
+== Disclaimer ==
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ''AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.

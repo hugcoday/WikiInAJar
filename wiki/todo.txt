@@ -1,0 +1,9 @@
+* [ ] Check if formatted text is well formed, if not show text and highlight possible problem lines (instead of browser showing error message)
+* [ ] Add links to older article versions
+* [ ] Better vCard layout
+* [ ] Correct alignment for to do list bullets
+* [ ] Support for tables
+* [ ] show tags when editing page (maybe even have separate field)
+* [ ] Show trail of visited pages (instead of having to use back button, esp. when pages were edited
+* [!] vCard categories don't show up in tag tree
+

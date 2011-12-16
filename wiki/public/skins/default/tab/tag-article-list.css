@@ -1,0 +1,18 @@
+#tag-article-list ul {
+	float: right;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-left: 10px;
+	text-align: left;
+	border-left: 1px solid #DBCFBD;
+	list-style: none;
+}
+
+#tag-article-list li {
+    background-color: white;
+    background-image: url(/XXX_public/skins/default/common/right-corner.gif); 
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding-right: 10px;
+}
