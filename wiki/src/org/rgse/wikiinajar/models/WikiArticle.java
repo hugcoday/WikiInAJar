@@ -131,7 +131,7 @@ public class WikiArticle implements ITaggable {
 		this.rawContent = articleContent;
 		this.exists = true;
 
-		rollover(new File(fileName), 0, 1);
+		//rollover(new File(fileName), 0, 1);
 		TextUtils.writeTextFile(fileName, rawContent);
 
 	}

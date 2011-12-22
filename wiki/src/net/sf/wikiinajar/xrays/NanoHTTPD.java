@@ -46,6 +46,8 @@ import java.net.*;
 public class NanoHTTPD
 {
 	public final Thread thread;
+	
+	private final ServerSocket ss;
 
 	// ==================================================
 	// API parts
@@ -209,7 +211,7 @@ public class NanoHTTPD
 	{
 		myTcpPort = port;
 
-		final ServerSocket ss = new ServerSocket( myTcpPort );
+		ss = new ServerSocket( myTcpPort );
 		thread = new Thread( new Runnable()
 			{
 				public void run()

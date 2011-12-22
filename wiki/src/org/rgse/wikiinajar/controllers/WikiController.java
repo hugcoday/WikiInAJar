@@ -80,5 +80,28 @@ public class WikiController {
 							: "/wiki/show/" + request.getPath().getId());
 		}
 	}
+	
+	public ControllerResponse appendAction(Request request) throws IOException {
+		String articleContent = request.getProperty(ARTICLE_CONTENT);
+		if (articleContent == null) {
+			return request.errorResponse("No content posted.");
+		} else {
+		    String id = request.getPath().getId();
+			WikiArticle article; 
+		    if (WikiArticle.exists(id)) {
+		        // load
+		        article = new WikiArticle(id);
+		        // save
+		        article = new WikiArticle(id, article.getRawContent() + articleContent);
+		    } else {
+		        // new
+		        article = new WikiArticle(id, articleContent);
+		    }
+			return request
+					.redirect(article.getTitle().equals(HOME_PAGE) ? "/wiki/"
+							: "/wiki/show/" + request.getPath().getId());
+		}
+	    
+	}
 
 }
