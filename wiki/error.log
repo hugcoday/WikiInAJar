@@ -1,0 +1,8 @@
+An error was encountered at: Mon Feb 13 07:18:18 GMT 2012
+Server is shutting down. Error details:
+
+java.lang.NullPointerException
+	at java.util.StringTokenizer.<init>(StringTokenizer.java:182)
+	at java.util.StringTokenizer.<init>(StringTokenizer.java:219)
+	at net.sf.wikiinajar.xrays.NanoHTTPD$HTTPSession.run(NanoHTTPD.java:304)
+	at java.lang.Thread.run(Thread.java:595)

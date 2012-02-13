@@ -25,8 +25,7 @@ import java.io.File;
 import java.io.FileInputStream;
 
 import org.rgse.wikiinajar.models.Image;
-import org.rgse.wikiinajar.models.Vcard;
-import org.rgse.wikiinajar.views.vcard.ShowVcardView;
+
 
 import net.sf.wikiinajar.xrays.ControllerResponse;
 import net.sf.wikiinajar.xrays.Request;
